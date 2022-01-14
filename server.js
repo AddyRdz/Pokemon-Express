@@ -13,6 +13,11 @@ const pokemon = require('./pokemon')
 // Middleware 
 
 // index Route
+app.get('/pokemon',(req, res) =>{
+    res.render('index.ejs',{
+        pokemon: pokemon
+    })
+})
 
 // res.send(pokemon)
 app.get('/pokemon',(req, res) => {
