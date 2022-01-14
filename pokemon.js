@@ -1,20 +1,33 @@
-// Dependencies
-const express = require('express')
+const pokemon = [ 
+    {
+      name: "Bulbasaur", 
+      img: "http://img.pokemondb.net/artwork/bulbasaur.jpg"
+    },
+    {
+      name: "Ivysaur", 
+      img: "http://img.pokemondb.net/artwork/ivysaur.jpg"
+    },
+    {
+      name: "Venusaur", 
+      img: "http://img.pokemondb.net/artwork/venusaur.jpg"
+    },
+    {
+      name: "Charmander", 
+      img: "http://img.pokemondb.net/artwork/charmander.jpg"
+    },
+    {
+      name: "Charizard", 
+      img: "http://img.pokemondb.net/artwork/charizard.jpg"
+    },
+    {
+      name: "Squirtle", 
+      img: "http://img.pokemondb.net/artwork/squirtle.jpg"
+    },
+    {
+      name: "Wartortle", 
+      img: "http://img.pokemondb.net/artwork/wartortle.jpg"
+    }
+  ];
 
-const app = express()
-const PORT = 3000
-
-// Configuring
-app.set('view engine', 'ejs')
-
-
-app.get('/',(req, res) =>{
-    console.log('This is hard')
-    res.send('Hello')
-})
-
-
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Server is started on port ${PORT}`)
-})
+  module.exports = pokemon
+//   "CommonJS syntax for exporting"
