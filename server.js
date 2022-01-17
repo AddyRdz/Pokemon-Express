@@ -8,9 +8,11 @@ const PORT = 3000
 app.set('view engine', 'ejs')
 
 // Database Models
-const pokemon = require('./pokemon')
+const pokemon = require('./models/pokemon')
 
 // Middleware 
+app.use(express.urlencoded({extended: false}))
+app.use(express.static('public'))
 
 // index Route
 app.get('/pokemon',(req, res) =>{
