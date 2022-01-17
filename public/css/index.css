@@ -8,7 +8,8 @@ a{
 }
 
 body{
-    background-color: white;
+    background: rgb(221,13,43);
+background: radial-gradient(circle, rgba(221,13,43,1) 18%, rgba(4,4,4,1) 94%);
 }
 
 
