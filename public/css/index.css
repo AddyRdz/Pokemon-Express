@@ -1,15 +1,15 @@
 h1{
     text-align: center;
-    color: black;
+    color: white;
 }
 
 a{
-    color:red;
+    color:white;
 }
 
 body{
     background: rgb(221,13,43);
-background: radial-gradient(circle, rgba(221,13,43,1) 18%, rgba(4,4,4,1) 94%);
+    background: radial-gradient(circle, rgba(221,13,43,1) 18%, rgba(4,4,4,1) 94%);
+    text-align: center;
 }
-
 
